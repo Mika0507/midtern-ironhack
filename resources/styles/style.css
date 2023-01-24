@@ -2,24 +2,31 @@
 
 :root {
   --primary: #072ac8;
-  --primary: #43D2FF;
-  --primary: #A2D6F9;
-  --primary: #D1EDFF;
+  --blue1-1: #43D2FF;
+  --blue1-2: #A2D6F9;
+  --white-blue: #D1EDFF;
   --colorh1Text: #292E47;
   --colorText: #6B708D;
-  --primary: #F2F4FC;
-  --primary: #ECF7FF;
+  --whiteb-g: #F2F4FC;
+  --whitetext: #ECF7FF;
   --secondary: #FFC600;
-  --textformath1: 60px bold;
-  --textformath2: 50px bold;
-  --textformath3: 40px bold;
-  --textformath4: 24px bold;
-  --textformatIntroText: 24px medium;
-  --textformatIntroText: 20px normal;
-  --textformatheadlineTtext: 17px normal;
-  --textformatheadlineTtext: 17px medium;
-  --textformatCaption1: 15px normal;
-  --textformatCaption2: 13px normal;
+  --h1-font-size: 60px;
+  --h1-font-weight: bold;
+  --h2-font-size: 50px;
+  --h2-font-weight: bold;
+  --h3-font-size: 40px;
+  --h3-font-weight: bold;
+  --h4-font-size: 24px;
+  --h4-font-weight: bold;
+  --intro-text-size-b:24px;
+  --intro-text-weight: medium;
+  --intro-text-size-s:20px;
+  --headline-text-size:17px;
+  --headline-weigh-n: normal;
+  --headline-weight-m: medium;
+  --caption1-text-size: 15px;
+  --caption2-text-size: 13px;
+  --caption-text-weight: normal;
 }
 
 * {
@@ -30,6 +37,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #F4F6FC;
 }
 
 
@@ -50,34 +58,446 @@ body {
 
 /* Your CSS code goes here */
 
+.menu-zone{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15em;
+  margin: 3em 7em;
+}
+
+.menu-zone nav ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.menu-zone nav ul li{
+  list-style: none;
+  
+}
+.menu-zone nav ul li a{
+  text-decoration: none;
+  color: var(--colorText);
+}
+
+.menu-zone nav ul li a:hover{
+  color: var(--primary);
+}
+
+.menu-zone button{
+  width: 150px;
+  height: 52px;
+  border: none;
+  background-color: var(--primary);
+  color:var(--whitetext);
+  font-size: var(--textformatIntroTextnormal);
+  cursor: pointer;
+}
+.menu-zone button:hover{
+  background-color: var(--colorh1Text);
+}
+
+
 /* ------------------------------ Header ------------------------------ */
 
 /* Your CSS code goes here */
+
+.hero-section{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 6em 7em;
+}
+
+.hero-text{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: baseline;
+  width: 500px;
+  gap: 2em;
+}
+
+.hero-section div h1{
+  font-size: var(--h1-font-size);
+  font-weight: var(--h1-font-weight);
+  color: var(--colorh1Text);
+}
+
+.hero-section div p{
+  font-size: var(--intro-text-size);
+  color: var(--colorText);
+}
+
+.hero-section a{
+  text-decoration: none;
+  font-size:var(--headline-text-size);
+  color:#626680;
+  padding-right: 1em;
+}
+
+.hero-section a + button{
+  background-color: var(--primary);
+  font-size:var(--headline-text-size);
+  color: var(--whitetext);
+  border: none;
+  width: 150px;
+  height: 52px;
+  cursor: pointer;
+}
+.hero-section a + button:hover{
+  background-color: var(--colorh1Text);
+}
+
+.position-hero{
+  position: relative;
+  background-image: url("/resources/images/hero-section/hero-image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 570px;
+  height: 637px;
+}
+.position-hero .card1{
+  position: absolute;
+  top: -16px;
+  left: -88px;
+  width: 360px;
+  height: 384px;
+  opacity: 0.9;
+  z-index: 1;
+}
+.position-hero .card2{
+  position: absolute;
+  bottom: -127px;
+  right: -80px;
+  width: 360px;
+  height: 384px;
+  z-index: 1;
+}
+
 
 /* ------------------------------ Partners ------------------------------ */
 
 /* Your CSS code goes here */
 
+.carousel-logos{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 13em 0;
+}
+
 /* ------------------------------ Recent projects ------------------------------ */
 
 /* Your CSS code goes here */
+
+
+.projects h2{
+  font-size: var(--h3-font-size);
+  font-weight: var(--h3-font-weight);
+  /* en pantallas de más de 1200 funciona */
+  /* margin: 0 10em 2em; */
+  margin: 0 5em 2em;
+}
+
+.projects div{
+  display: flex;
+  justify-content: center;
+}
+
+.projects article{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  height: 444px;
+  margin: 1em;
+  box-shadow: 2px 2px 24px 6px rgba(0, 0, 0, 0.1);
+}
+
+.projects article img{
+  width: 340px;
+  height: 240px;
+}
+
+.projects-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2em;
+  margin-top: 2em;
+}
+
+.projects-text h4{
+  font-size: var(--h4-font-size);
+  font-weight: var(--h4-font-weight);
+  margin-bottom: 0.5em;
+}
+
+.projects-text p{
+  font-size: var(--intro-text-size);
+  font-weight: var(--intro-text-weight);
+  color: var(--colorText);
+}
+
+.projects-text a{
+  margin-top: 3em;
+  text-decoration: none;
+  font-size: var(--intro-text-size);
+  font-weight: var(--intro-text-weight);
+  color: var(--primary);
+}
+
 
 /* ------------------------------ Client reviews ------------------------------ */
 
 /* Your CSS code goes here */
 
+.reviews-section{
+  position: relative;
+  background-color: var(--colorh1Text);
+  width: 1320px;
+  height: 622px;
+  margin: 10em auto 10em;
+}
+
+.emoji1{
+  position: absolute;
+  top: 51px;
+  left: 76px;
+  width: 150px;
+  height: 150px;
+}
+
+.emoji2{
+  position: absolute;
+  top: 51px;
+  right: 91px;
+  width: 150px;
+  height: 150px;
+}
+
+.emoji3{
+  position: absolute;
+  bottom: 73px;
+  left: 76px;
+  width: 150px;
+  height: 150px;
+}
+
+.emoji4{
+  position: absolute;
+  bottom: 73px;
+  right: 72px;
+  width: 150px;
+  height: 150px;
+}
+.circles{
+  width: 1320px;
+}
+
+.reviews-clients{
+  position:absolute;
+  top:120px;
+  left: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6.5em;
+  width: 950px;
+  height: 382px;
+}
+.reviews-clients h3{
+  font-size: var(--h3-font-size);
+  font-weight: var(--h3-font-weight);
+  color: var(--whitetext);
+}
+
+.text-profile-first{
+  font-size:var(--intro-text-size-b);
+  font-weight: var(--intro-text-weight);
+  color: var(--secondary);
+  text-align: center;
+}
+
+.profile-user{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.girl-profile{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.text-profile{
+  font-size: var(--caption1-text-size);
+  font-weight: var(--caption-text-weight);
+  color: var(--blue1-1);
+}
+.text-profile span{
+  font-size: 14px;
+  color: var(--whitetext);
+}
+
 /* ------------------------------ Services ------------------------------ */
 
 /* Your CSS code goes here */
+.services h2{
+  font-size: var(--h3-font-size);
+  font-weight: var(--h3-font-weight);
+  /* en pantallas de más de 1200 funciona */
+  /* margin: 0 10em 2em; */
+  margin: 0 5em 2em;
+}
+
+.services div{
+  display: flex;
+  justify-content: center;
+}
+
+.services article{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap:1.5em;
+  width: 340px;
+  height: 380px;
+  margin: 1em;
+  padding:3em 2em 0 2em;
+  box-shadow: 2px 2px 24px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icons-services{
+  background-color: var(--blue1-2);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.body-text-services{
+  font-size: var(--intro-text-size-s);
+  font-weight: var(--intro-text-weight);
+  color: var(--colorText);
+}
+
+.title-services{
+  font-size: var(--intro-text-size-b);
+  font-weight: var(--intro-text-weight);
+  color: var(--colorh1Text);
+}
+
+.services article a{
+  text-decoration: none;
+  font-size: var(--headline-text-size);
+  font-weight: var(--headline-weight-m);
+  color: var(--primary);
+  margin-top: 2em;
+  
+}
 
 /* ------------------------------ Questions form ------------------------------ */
 
 /* Your CSS code goes here */
 
+.newsletter-section{
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  width: 1320px;
+  height: 500px;
+  margin: 10em auto 10em;
+}
+
+.newsletter-section h3{
+  font-size: var(--h3-font-size);
+  font-weight: var(--h3-font-weight);
+  color: var(--colorh1Text);
+}
+
+.newsletter-section p{
+  font-size: var(--intro-text-size-s);
+  font-weight: var(--intro-text-weight);
+  color: var(--colorh1Text);
+}
+
+.form-newsletter{
+position: relative;
+margin: 0 1em;
+}
+
+.input-newsletter{
+  width: 393px;
+  height: 80px;
+  border: none;
+  outline: none;
+  padding-left: 4em;
+}
+.input-icon-envelope{
+  position: absolute;
+  display: block;
+  bottom: -0.5rem;
+  left: 1rem;
+  z-index: 2;
+}
+
+.input-button-newsletter{
+  background-color: var(--primary);
+  color: var(--whitetext);
+  font-size: var(--headline-text-size);
+  font-weight: var(--headline-weigh-n);
+  width: 198px;
+  height: 80px;
+  border: none;
+  cursor: pointer;
+}
+
+.input-button-newsletter:hover{
+  background-color: var(--colorh1Text);
+}
 /* ------------------------------ Footer ------------------------------ */
 
 /* Your CSS code goes here */
 
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10em 7em 6em;
+}
+
+footer div{
+  line-height: 2em;
+}
+
+footer div p{
+  font-size: var(--caption1-text-size);
+  font-weight: var(--caption-text-weight);
+  color: var(--colorText);
+}
+
+.footer-list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  gap: 2em;
+}
+
+.footer-list a{
+  text-decoration: none;
+  color: var(--colorText);
+}
+
+.footer-list a:hover{
+  color: var(--primary);
+}
 /* -------------------------------------------------------------------------- */
 /* ------------------------------ PROJECT html ------------------------------ */
 /* -------------------------------------------------------------------------- */
@@ -86,6 +506,48 @@ body {
 
 /* Your CSS code goes here */
 
+.simplify-article{
+  width: 1100px;
+  margin: 3em auto 5em;
+}
+.title-article h2{
+  font-size: var(--h2-font-size);
+  font-weight: var(--h2-font-weight);
+  color: var(--colorh1Text);
+}
+.title-article-text{
+  font-size: var(--intro-text-size-b);
+  font-weight: var(--intro-text-weight);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.title-article-text-small{
+  font-size: var(--intro-text-size-s);
+  font-weight: var(--intro-text-weight);
+  color: var(--colorh1Text);
+}
+
+.title-article-text-small span{
+  color: var(--colorText);
+}
+
+.simplify-article-image{
+  width: 1100px;
+  height: 444px;
+  margin: 5em 0;
+  box-shadow: 2px 2px 24px 6px rgba(247, 23, 213, 0.2);
+}
+
+.body-text-article{
+  font-size: var(--intro-text-size-s);
+  font-weight: var(--intro-text-weight);
+  color: var(--colorText);
+  line-height: 1.5em;
+  margin-bottom: 2em;
+}
+
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ CONTACT-US html ------------------------------ */
 /* ----------------------------------------------------------------------------- */
@@ -93,6 +555,55 @@ body {
 /* ------------------------------ Form ------------------------------ */
 
 /* Your CSS code goes here */
+
+.section-form{
+  width: 1100px;
+  height: 660px;
+  margin: 2em auto;
+}
+.section-form h2{
+  font-size: var(--h2-font-size);
+  font-weight: var(--h2-font-weight);
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 3em 0;
+}
+
+.form label{
+  font-size: var(--intro-text-size-s);
+  font-weight: var(--intro-text-weight);
+}
+
+#name{
+  width: 1100px;
+  height: 70px;
+  padding-left: 2em;
+}
+
+#tel, #email{
+  width: 500px;
+  height: 70px;
+  padding-left: 2em;
+}
+
+#message{
+  padding: 2em;
+}
+
+#button{
+  background-color: var(--primary);
+  color: var(--whitetext);
+  font-weight: var(--headline-text-size);
+  font-weight: var(--headline-weight-m);
+  width: 1100px;
+  height: 80px;
+  border: none;
+}
+
 
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ About html ------------------------------ */

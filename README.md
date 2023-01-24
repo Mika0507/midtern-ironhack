@@ -70,7 +70,7 @@ En esta sección se puede incluir información como:
 
 - Una descripción breve del proyecto y su propósito
 
-  El proyecto se basa en la copia de una página web que se presente con una visualización similar a la original y la implementación de algo de javascript.
+  El proyecto se basa en la copia de una página web que se presenta con una visualización similar a la original y la implementación de algo de javascript.
 
 - Tecnologías utilizadas
 
@@ -78,7 +78,7 @@ En esta sección se puede incluir información como:
 
 - Funcionalidades principales
 
-  Las funcionalidades principales de este proyecto es la navegación por la página web y la interacción.
+  Las funcionalidad principal de este proyecto es la navegación por la página web y la interacción con ella.
 
 - Instrucciones de instalación y configuración
 - Enlaces a documentación adicional o recursos relacionados con el proyecto
@@ -130,10 +130,12 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 
 ###### Martes 24, Enero 2023
 
+24/01/2023. Este día lo he dedicado a la creación del css de las páginas. He llegado sin muchos contratiempos a la creación completa del "home" y la de "projects" la página de "contact us" la tengo casi terminada pero no he llegado a editar por completo el formulario. He tenido obstáculos en lo que se refiere a la posición absolute
+
 - [ ] Tarea no completada
 - [x] Readme del día 23/01/23 y del 24/01/23.
-- [ ] Crear el CSS de la "home page"
-- [ ] Crear el CSS de la "project page"
+- [x] Crear el CSS de la "home page"
+- [x] Crear el CSS de la "project page"
 - [ ] Crear el CSS de la "contact-us page"
 
 #### Day Three
@@ -141,8 +143,8 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 ###### Miercoles 25, Enero 2023
 
 - [ ] Tarea no completada
-- [x] Tarea Completada
-- [x] Readme del día 25/01/23 
+- [] Tarea Completada
+- [] Readme del día 25/01/23 
 - [ ] Crear el CSS de la "home page"
 - [ ] Crear el CSS de la "project page"
 - [ ] Crear el CSS de la "contact-us page"
@@ -152,8 +154,8 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 ###### Jueves 26, Enero 2023
 
 - [ ] Tarea no completada
-- [x] Tarea Completada
-- [x] Readme del día 26/01/23
+- [] Tarea Completada
+- [] Readme del día 26/01/23
 - [ ] Crear el CSS de la "home page"
 - [ ] Crear el CSS de la "project page"
 - [ ] Crear el CSS de la "contact-us page"
@@ -188,7 +190,7 @@ Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.c
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
-Presentation Link: [Insert here your presentation link](insert-link-here)
+Presentation Link: [https://midtern-ironhack-indol.vercel.app/](insert-link-here)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
