@@ -64,49 +64,38 @@ Tener un archivo README.md bien estructurado y bien documentado también puede s
 
 <img src="./resources/images/readMe/screenshot.png" alt="Logo" width="100%" height="50%">
 
-La sección "sobre el proyecto" en un archivo README es una sección importante que proporciona información general sobre el objetivo y la funcionalidad del proyecto.
+<!-- La sección "sobre el proyecto" en un archivo README es una sección importante que proporciona información general sobre el objetivo y la funcionalidad del proyecto.
 
 En esta sección se puede incluir información como:
 
 - Una descripción breve del proyecto y su propósito
-
-  El proyecto se basa en la copia de una página web que se presenta con una visualización similar a la original y la implementación de algo de javascript.
-
 - Tecnologías utilizadas
-
-  Las tecnologías utilizadas en este proyecto son programación con HTML, CSS y JavaScript.
-
 - Funcionalidades principales
-
-  Las funcionalidad principal de este proyecto es la navegación por la página web y la interacción con ella.
-
 - Instrucciones de instalación y configuración
 - Enlaces a documentación adicional o recursos relacionados con el proyecto
 - Licencia del proyecto
 - Contribuciones de las personas en el proyecto.
 
-En resumen, la sección "sobre el proyecto" es una excelente manera de brindar a los usuarios y contribuidores una visión general del proyecto y proporcionarles toda la información necesaria para comenzar a trabajar con él.
-
+En resumen, la sección "sobre el proyecto" es una excelente manera de brindar a los usuarios y contribuidores una visión general del proyecto y proporcionarles toda la información necesaria para comenzar a trabajar con él. -->
+Este proyecto se basa en la aplicación de los conocimientos adquiridos con respecto a los lenguajes de programación HTML, CSS y JavaScript. Creamos una copia de una página web e intentamos acercarnos lo más posible al diseño original.
+Las funcionalidades principales de este proyecto son la adaptación del diseño a diferentes tipos de pantalla y a la interacción con la navegación como usuario.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Construido Con
 
-La sección "construido con" en un archivo README es una sección que proporciona información sobre las tecnologías y herramientas utilizadas para desarrollar el proyecto.
+<!-- La sección "construido con" en un archivo README es una sección que proporciona información sobre las tecnologías y herramientas utilizadas para desarrollar el proyecto.
 
 En esta sección se puede incluir información como:
 
 - Lenguajes de programación utilizados
-
-  HTML, CSS y JavaScript
-
 - Frameworks y bibliotecas utilizadas
 - Herramientas de desarrollo (IDE, control de versiones, etc)
 - Servicios en la nube utilizados (si corresponde)
 - Otros recursos o tecnologías relacionadas con el proyecto.
 
-  Github, Vercel.
-
-En resumen, la sección "construido con" es una excelente manera de brindar a los usuarios y contribuidores una compresión de las tecnologías y herramientas utilizadas para desarrollar el proyecto, esto ayuda a entender mejor el proyecto y a los desarrolladores a contribuir de manera efectiva.
+En resumen, la sección "construido con" es una excelente manera de brindar a los usuarios y contribuidores una compresión de las tecnologías y herramientas utilizadas para desarrollar el proyecto, esto ayuda a entender mejor el proyecto y a los desarrolladores a contribuir de manera efectiva. -->
+Los lenguajes de programación usados a la edición e interacción de las páginas web, son: HTML, CSS y JavaScript. Sin el uso de ningún framework.
+ 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,46 +105,41 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 
 #### Day One
 
-#### Day One
-
 ###### Lunes 23, Enero 2023
 
 - [x] Creación del esqueleto en html de las páginas.
   
   23/01/2023. A la hora de comenzar el proyecto "Circle" he seguido un pequeño plan con la finalidad de terminar todos los pasos que se piden. Para comenzar, he estructurado el cuerpo del html de las páginas con el objetivo de tener ya visualizadas, aquellas partes que necesitarán de identificadores y clases para más adelante añadir el css. 
 
-- [ ] Readme
-
 #### Day Two
 
 ###### Martes 24, Enero 2023
 
-24/01/2023. Este día lo he dedicado a la creación del css de las páginas. He llegado sin muchos contratiempos a la creación completa del "home" y la de "projects" la página de "contact us" la tengo casi terminada pero no he llegado a editar por completo el formulario. He tenido obstáculos en lo que se refiere a la posición absolute
-
-- [ ] Tarea no completada
 - [x] Readme del día 23/01/23 y del 24/01/23.
 - [x] Crear el CSS de la "home page"
 - [x] Crear el CSS de la "project page"
 - [ ] Crear el CSS de la "contact-us page"
 
+
+24/01/2023. Este día lo he dedicado a la creación del css de las páginas. He llegado sin muchos contratiempos a la creación completa del "home" y la de "projects", la página de "contact us" la tengo casi terminada pero no he llegado a editar por completo el formulario. He tenido obstáculos en lo que se refiere a la posición absolute pero al fianl se ha solucionado en poco tiempo. Otro de los contratiempos a los que me he encontrado ha sido en la herencia de estilos del css. Tengo que mejorar en la nomenglatura de las etiquetas.
+
 #### Day Three
 
 ###### Miercoles 25, Enero 2023
 
-- [ ] Tarea no completada
-- [] Tarea Completada
-- [] Readme del día 25/01/23 
-- [ ] Crear el CSS de la "home page"
-- [ ] Crear el CSS de la "project page"
-- [ ] Crear el CSS de la "contact-us page"
+- [x] Readme del día 25/01/23 
+- [x] Crear el CSS de la "contact-us page"
+- [x] Crear las mediaqueries
+
+
 
 #### Day Four
 
 ###### Jueves 26, Enero 2023
 
 - [ ] Tarea no completada
-- [] Tarea Completada
-- [] Readme del día 26/01/23
+- [ ] Tarea Completada
+- [ ] Readme del día 26/01/23
 - [ ] Crear el CSS de la "home page"
 - [ ] Crear el CSS de la "project page"
 - [ ] Crear el CSS de la "contact-us page"
@@ -203,6 +187,7 @@ La sección "agradecimientos" en un archivo README es una sección que proporcio
 En esta sección se puede incluir información como:
 
 - Agradecimientos específicos a personas que ayudaron en el desarrollo del proyecto.
+- <a href="https://www.flaticon.es/iconos-gratis/menu-de-hamburguesas" title="menú de hamburguesas iconos">Menú de hamburguesas iconos creados por bsd - Flaticon</a>
 - Agradecimientos a instituciones o organizaciones que proporcionaron apoyo financiero o recursos.
 - Enlaces a proyectos o recursos relacionados que fueron útiles para el desarrollo del proyecto.
 

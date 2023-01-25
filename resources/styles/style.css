@@ -33,11 +33,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-size: 1rem; -- aplica rem */
 }
 
 body {
   font-family: "Roboto", sans-serif;
   background-color: #F4F6FC;
+  /* font-size: 8px; -- aplica em */
+}
+
+.examplep{
+  font-size: 1rem;
 }
 
 
@@ -66,6 +72,13 @@ body {
   margin: 3em 7em;
 }
 
+.menuburguer{
+  display: none;
+}
+.menuburguer img{
+  width: 5%;
+}
+
 .menu-zone nav ul{
   display: flex;
   justify-content: space-between;
@@ -74,8 +87,8 @@ body {
 
 .menu-zone nav ul li{
   list-style: none;
-  
 }
+
 .menu-zone nav ul li a{
   text-decoration: none;
   color: var(--colorText);
@@ -90,9 +103,13 @@ body {
   height: 52px;
   border: none;
   background-color: var(--primary);
+  cursor: pointer;
+}
+
+.menu-zone button a{
+  text-decoration: none;
   color:var(--whitetext);
   font-size: var(--textformatIntroTextnormal);
-  cursor: pointer;
 }
 .menu-zone button:hover{
   background-color: var(--colorh1Text);
@@ -114,7 +131,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: baseline;
-  width: 500px;
+  /* 31em */
+  width: 31em;
   gap: 2em;
 }
 
@@ -141,8 +159,10 @@ body {
   font-size:var(--headline-text-size);
   color: var(--whitetext);
   border: none;
-  width: 150px;
-  height: 52px;
+  /* 10em */
+  width: 10em;
+  /* 3.25em */
+  height: 3.25em;
   cursor: pointer;
 }
 .hero-section a + button:hover{
@@ -155,24 +175,34 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 570px;
-  height: 637px;
+  /* 35.7em */
+  width: 35.7em;
+  /* 40em */
+  height: 40em;
 }
 .position-hero .card1{
   position: absolute;
+  /* -1em */
   top: -16px;
+  /* -5.5em */
   left: -88px;
+  /* 22.5em */
   width: 360px;
+  /* 24em */
   height: 384px;
   opacity: 0.9;
   z-index: 1;
 }
 .position-hero .card2{
   position: absolute;
-  bottom: -127px;
-  right: -80px;
-  width: 360px;
-  height: 384px;
+  /* -8em */
+  bottom: -8em;
+  /* -5em */
+  right: -5em;
+  /* 22.5em */
+  width: 22.5em;
+  /* 24em */
+  height: 24em;
   z-index: 1;
 }
 
@@ -210,15 +240,19 @@ body {
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  /* 21.25em */
   width: 340px;
+  /* 27.75em */
   height: 444px;
   margin: 1em;
   box-shadow: 2px 2px 24px 6px rgba(0, 0, 0, 0.1);
 }
 
 .projects article img{
-  width: 340px;
-  height: 240px;
+  /* 21.25em */
+  width: 21.25em;
+  /* 15em */
+  height: 15em;
 }
 
 .projects-text{
@@ -257,8 +291,10 @@ body {
 .reviews-section{
   position: relative;
   background-color: var(--colorh1Text);
-  width: 1320px;
-  height: 622px;
+  /* 82.5em */
+  width: 82.5em;
+  /* 38.9em */
+  height: 38.9em;
   margin: 10em auto 10em;
 }
 
@@ -266,35 +302,40 @@ body {
   position: absolute;
   top: 51px;
   left: 76px;
-  width: 150px;
-  height: 150px;
+  /* 9.4em */
+  width: 9.4em;
+  height: 9.4em;
 }
 
 .emoji2{
   position: absolute;
   top: 51px;
   right: 91px;
-  width: 150px;
-  height: 150px;
+  /* 9.4em */
+  width: 9.4em;
+  height: 9.4em;
 }
 
 .emoji3{
   position: absolute;
   bottom: 73px;
   left: 76px;
-  width: 150px;
-  height: 150px;
+  /* 9.4em */
+  width: 9.4em;
+  height: 9.4em;
 }
 
 .emoji4{
   position: absolute;
   bottom: 73px;
   right: 72px;
-  width: 150px;
-  height: 150px;
+  /* 9.4em */
+  width: 9.4em;
+  height: 9.4em;
 }
 .circles{
-  width: 1320px;
+  /* 82.5em */
+  width: 82.5em;
 }
 
 .reviews-clients{
@@ -305,8 +346,10 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 6.5em;
-  width: 950px;
-  height: 382px;
+  /* 59.4em */
+  width: 59.4em;
+  /* 23.9em */
+  height: 23.9em;
 }
 .reviews-clients h3{
   font-size: var(--h3-font-size);
@@ -329,8 +372,9 @@ body {
 }
 
 .girl-profile{
-  width: 70px;
-  height: 70px;
+  /* 4.3em */
+  width: 4.3em;
+  height: 4.3em;
   border-radius: 50%;
 }
 
@@ -365,8 +409,10 @@ body {
   display: flex;
   flex-direction: column;
   gap:1.5em;
-  width: 340px;
-  height: 380px;
+  /* 21.25em */
+  width: 21.25em;
+  /* 23.75em */
+  height: 23.75em;
   margin: 1em;
   padding:3em 2em 0 2em;
   box-shadow: 2px 2px 24px 6px rgba(0, 0, 0, 0.1);
@@ -374,8 +420,9 @@ body {
 
 .icons-services{
   background-color: var(--blue1-2);
-  width: 80px;
-  height: 80px;
+  /* 5em */
+  width: 5em;
+  height: 5em;
   border-radius: 50%;
 }
 
@@ -411,8 +458,10 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2em;
-  width: 1320px;
-  height: 500px;
+  /* 82.5em */
+  width: 100%;
+  /* 31.25em */
+  height: 31.25em ;
   margin: 10em auto 10em;
 }
 
@@ -434,8 +483,10 @@ margin: 0 1em;
 }
 
 .input-newsletter{
-  width: 393px;
-  height: 80px;
+  /* 24.5em */
+  width: 24.5em;
+  /* 5em */
+  height: 5em;
   border: none;
   outline: none;
   padding-left: 4em;
@@ -454,7 +505,7 @@ margin: 0 1em;
   font-size: var(--headline-text-size);
   font-weight: var(--headline-weigh-n);
   width: 198px;
-  height: 80px;
+  height: 66px;
   border: none;
   cursor: pointer;
 }
@@ -486,7 +537,8 @@ footer div p{
 .footer-list{
   display: flex;
   flex-wrap: wrap;
-  width: 300px;
+  /* 18.75em */
+  width: 18.75em;
   gap: 2em;
 }
 
@@ -507,7 +559,8 @@ footer div p{
 /* Your CSS code goes here */
 
 .simplify-article{
-  width: 1100px;
+  /* 68.7em */
+  width: 68.7em;
   margin: 3em auto 5em;
 }
 .title-article h2{
@@ -534,8 +587,10 @@ footer div p{
 }
 
 .simplify-article-image{
-  width: 1100px;
-  height: 444px;
+  /* 68.7em */
+  width: 68.7em;
+  /* 27.75em */
+  height: 27.75em;
   margin: 5em 0;
   box-shadow: 2px 2px 24px 6px rgba(247, 23, 213, 0.2);
 }
@@ -557,8 +612,10 @@ footer div p{
 /* Your CSS code goes here */
 
 .section-form{
-  width: 1100px;
-  height: 660px;
+  /* 68.7em */
+  width: 68.7em;
+  /* 41.25em */
+  height: 41.25em;
   margin: 2em auto;
 }
 .section-form h2{
@@ -578,20 +635,36 @@ footer div p{
   font-weight: var(--intro-text-weight);
 }
 
+.form-middle{
+  display: flex;
+  gap: 5.25em;
+}
+.form-middle div{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
 #name{
-  width: 1100px;
+  /* 68.7em */
+  width: 68.7em;
   height: 70px;
   padding-left: 2em;
+  outline: none;
 }
 
 #tel, #email{
-  width: 500px;
+  /* 31.25em */
+  width: 31.25em;
   height: 70px;
   padding-left: 2em;
+  outline: none;
 }
 
 #message{
   padding: 2em;
+  width: 68.7em;
+  height: 12em;
 }
 
 #button{
@@ -599,7 +672,8 @@ footer div p{
   color: var(--whitetext);
   font-weight: var(--headline-text-size);
   font-weight: var(--headline-weight-m);
-  width: 1100px;
+  /* 68.7em */
+  width: 68.7em;
   height: 80px;
   border: none;
 }
@@ -618,11 +692,151 @@ footer div p{
 /* ------------------------- Smaller than 990px (tablet) ------------------------- */
 @media (max-width: 990px) {
   /* Your CSS code goes here */
+  .menu-zone{
+    margin: 2em;
+    text-align: right;
+  }
+  .menuburguer{
+    display: block;    
+  }
+  .menu-zone nav{
+    display: none;
+  }
+  .menu-zone nav ul{
+    flex-direction: column;
+  }
+  .menu-zone nav ul li{
+    margin: 1em 0;
+  }
+  .menu-zone button{
+    display: none;
+  }
+/* Hero  */
+  .hero-section{
+    flex-direction: column;
+    gap: 3em;
+  }
+  .hero-text{
+    text-align: center;
+    flex-direction: column;
+  }
+  .hero-section div h1{
+    font-size: 45px;
+  }
+  .hero-section a + button{
+    margin: 0 auto;
+  }
+  /* Carrusel empresas */
+  .carousel-logos .amazon{
+    display: none;
+  }
+  /* Recent Projects */
+  .projects div{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .projects h2{
+    margin: 1em 0.5em
+  }
+  /* Reviews section */
+  .reviews-section{
+    width: 100%;
+  }
+  .reviews-clients{
+    width: 77%;
+    top: 145px;
+    left: 100px;
+    gap: 1em;
+    justify-content: space-evenly;
+  }
+  .circles{
+    width: 100%;
+  }
+  .reviews-clients h3{
+    font-size: 31px;
+    text-align: center;
+  }
+  .text-profile-first{
+    font-size: 20px;
+  }
+  /* Services */
+  .services article{
+    width: 30em;
+    gap: 0.75em;
+    height: 20.75em;
+    padding: 2em 2em 0 1.5em
+  }
+  .icons-services{
+    width: 3em;
+    height: 3em;
+  }
+  .title-services{
+    font-size: 18px;
+  }
+  .body-text-services{
+    font-size: 15px;
+  }
+  /* footer */
+  footer{
+    margin: 10em 1em 6em;
+  }
+  .footer-list a{
+    color: var(--primary);
+  }
 }
 
 /* ------------------------- Smaller than 766px (mobile) ------------------------- */
 @media (max-width: 766px) {
   /* Your CSS code goes here */
+  .menu-zone{
+    margin: 2em;
+    text-align: right;
+  }
+  .menuburguer{
+    display: block;    
+  }
+  .menu-zone nav{
+    display: none;
+  }
+  .menu-zone nav ul{
+    flex-direction: column;
+  }
+  .menu-zone nav ul li{
+    margin: 1em 0;
+  }
+  .menu-zone button{
+    display: none;
+  }
+  /* Hero Section */
+  .hero-section div h1{
+    font-size: 28px;
+  }
+  .card1, .card2{
+    display: none;
+  }
+  /* Reset Project */
+  .projects article{
+    width: 100%;
+  }
+  .projects article img{
+    width: 100%;
+  }
+  /* Reviews */
+  .emoji1, .emoji2, .emoji3, .emoji4{
+    display: none;
+  }
+  .reviews-clients{
+    height: 28em;
+    top: 84px;
+    left: 70px;
+  }
+  .services div{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .services h2{
+    margin: 0 4em 0em
+  }
 }
 
 /* ------------------------------ Hamburguer menu ------------------------------ */
