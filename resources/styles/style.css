@@ -35,7 +35,9 @@
   box-sizing: border-box;
   /* font-size: 1rem; -- aplica rem */
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Roboto", sans-serif;
   background-color: #F4F6FC;
@@ -72,33 +74,38 @@ body {
   margin: 3em 7em;
 }
 
-.menuburguer{
+/* .menuburguer{
   display: none;
 }
 .menuburguer img{
   width: 5%;
-}
+} */
 
-.menu-zone nav ul{
+.nav-links{
   display: flex;
   justify-content: space-between;
   gap: 2em;
 }
 
-.menu-zone nav ul li{
+.nav-links li{
   list-style: none;
 }
 
-.menu-zone nav ul li a{
+.nav-links li a{
   text-decoration: none;
   color: var(--colorText);
+  transition:  0.7s ease;
 }
 
-.menu-zone nav ul li a:hover{
+.nav-links li a:hover{
   color: var(--primary);
 }
 
-.menu-zone button{
+.button-menu{
+  display: none;
+}
+
+.button-contact{
   width: 150px;
   height: 52px;
   border: none;
@@ -106,12 +113,12 @@ body {
   cursor: pointer;
 }
 
-.menu-zone button a{
+.button-contact a{
   text-decoration: none;
   color:var(--whitetext);
   font-size: var(--textformatIntroTextnormal);
 }
-.menu-zone button:hover{
+.button-contact:hover{
   background-color: var(--colorh1Text);
 }
 
@@ -241,16 +248,16 @@ body {
   display: flex;
   flex-direction: column;
   /* 21.25em */
-  width: 340px;
+  width: 22.5em;
   /* 27.75em */
-  height: 444px;
+  height: 35em;
   margin: 1em;
   box-shadow: 2px 2px 24px 6px rgba(0, 0, 0, 0.1);
 }
 
 .projects article img{
   /* 21.25em */
-  width: 21.25em;
+  width: 22.5em;
   /* 15em */
   height: 15em;
 }
@@ -259,8 +266,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 2em;
-  margin-top: 2em;
+  margin: 2em 1em;
 }
 
 .projects-text h4{
@@ -399,7 +405,7 @@ body {
   margin: 0 5em 2em;
 }
 
-.services div{
+.articles-services{
   display: flex;
   justify-content: center;
 }
@@ -419,10 +425,13 @@ body {
 }
 
 .icons-services{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--blue1-2);
-  /* 5em */
   width: 5em;
   height: 5em;
+  /* 5em */
   border-radius: 50%;
 }
 
@@ -560,7 +569,7 @@ footer div p{
 
 .simplify-article{
   /* 68.7em */
-  width: 68.7em;
+  width: 80vw;
   margin: 3em auto 5em;
 }
 .title-article h2{
@@ -588,7 +597,7 @@ footer div p{
 
 .simplify-article-image{
   /* 68.7em */
-  width: 68.7em;
+  width: 80vw;
   /* 27.75em */
   height: 27.75em;
   margin: 5em 0;
@@ -613,7 +622,7 @@ footer div p{
 
 .section-form{
   /* 68.7em */
-  width: 68.7em;
+  width: 57em;
   /* 41.25em */
   height: 41.25em;
   margin: 2em auto;
@@ -650,7 +659,9 @@ footer div p{
   width: 68.7em;
   height: 70px;
   padding-left: 2em;
+  border: none;
   outline: none;
+  background-color: rgb(214, 223, 237);
 }
 
 #tel, #email{
@@ -658,13 +669,17 @@ footer div p{
   width: 31.25em;
   height: 70px;
   padding-left: 2em;
+  border: none;
   outline: none;
+  background-color: rgb(214, 223, 237);
 }
 
 #message{
   padding: 2em;
   width: 68.7em;
   height: 12em;
+  border: none;
+  background-color:rgb(214, 223, 237)
 }
 
 #button{
@@ -692,23 +707,97 @@ footer div p{
 /* ------------------------- Smaller than 990px (tablet) ------------------------- */
 @media (max-width: 990px) {
   /* Your CSS code goes here */
+  /* menu hamburguesa */
+  .menu-nav {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 100;
+    background-color: #F4F6FC;
+  }
+  
+  .menu-nav.show {
+   left: 0;
+  }
+
+  .nav-links {
+    margin: 16px 0;
+    background-color: rgb(223 218 218);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .nav-links li {
+    margin-top: 2rem;
+    color: #a29d9d;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+  }
+  .menu-zone .button-menu{
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    background-color:#F4F6FC;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .button-menu span{
+    width: 37px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #444444;
+    border-radius: 3px;
+    transform-origin: 4px 0px;
+    transition: all .2s linear;
+  }
+  
+  .button-menu.close span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, 0px);
+    background: #444444;
+  }
+  
+  .button-menu.close span:nth-child(2){
+    transform: rotate(-45deg) translate(-10px, 6px);;
+  }
+  
+  .button-menu.close span:nth-child(3){
+    display: none;
+  }
+/* menu normal */
   .menu-zone{
     margin: 2em;
     text-align: right;
   }
-  .menuburguer{
+  /* .menuburguer{
     display: block;    
-  }
-  .menu-zone nav{
+  } */
+  /* .menu-zone nav{
     display: none;
-  }
-  .menu-zone nav ul{
+  } */
+  /* .menu-zone nav ul{
     flex-direction: column;
   }
-  .menu-zone nav ul li{
-    margin: 1em 0;
-  }
-  .menu-zone button{
+  .menu-zone nav ul li{ */
+    /* margin: 1em 0;
+  } */
+  .button-contact{
     display: none;
   }
 /* Hero  */
@@ -738,6 +827,17 @@ footer div p{
   .projects h2{
     margin: 1em 0.5em
   }
+  /* Projects page */
+  .projects article{
+    width: 100%;
+    margin-left: 0.25em;
+  }
+  .projects article img{
+    width: 100%;
+  }
+  .body-text-article{
+    width: 80vw;
+  }
   /* Reviews section */
   .reviews-section{
     width: 100%;
@@ -759,16 +859,24 @@ footer div p{
   .text-profile-first{
     font-size: 20px;
   }
+  /* Section form */
+  .section-form, #name, .form-middle, #message, #button{
+    width: 100%;
+    gap: 0.2em;    
+  }
+  #email, #tel{
+    width: 28.8em;
+  }
   /* Services */
-  .services article{
+  .articles-services article{
     width: 30em;
     gap: 0.75em;
     height: 20.75em;
     padding: 2em 2em 0 1.5em
   }
   .icons-services{
-    width: 3em;
-    height: 3em;
+    width: 5em;
+    height: 5em;
   }
   .title-services{
     font-size: 18px;
@@ -784,7 +892,6 @@ footer div p{
     color: var(--primary);
   }
 }
-
 /* ------------------------- Smaller than 766px (mobile) ------------------------- */
 @media (max-width: 766px) {
   /* Your CSS code goes here */
@@ -821,6 +928,9 @@ footer div p{
   .projects article img{
     width: 100%;
   }
+  .body-text-article{
+    width: 80vw;
+  }
   /* Reviews */
   .emoji1, .emoji2, .emoji3, .emoji4{
     display: none;
@@ -830,12 +940,37 @@ footer div p{
     top: 84px;
     left: 70px;
   }
-  .services div{
+  .articles-services{
     width: 100%;
     flex-wrap: wrap;
   }
+  /* Services section */
+  .icons-services{
+    width: 5em;    
+  }
   .services h2{
     margin: 0 4em 0em
+  }
+  /* newsletter section */
+  .newsletter-section{
+    width: 100vw;
+    text-align: center;
+  }
+  .input-newsletter{
+    width: 198px;
+  }
+  .newsletter-section div{
+    flex-direction: column;
+  }
+  .input-button-newsletter{
+    margin-top: 1em;
+  }
+  .section-form div{
+    flex-direction: column;
+  }
+  footer{
+    flex-direction: column;
+    gap: 2em;
   }
 }
 

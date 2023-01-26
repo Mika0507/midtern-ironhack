@@ -14,15 +14,26 @@
         ><img src="resources/images/logos/circle.svg" alt="logo-circle"
       /></a>
 
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="index.html/#recent-projects">Projects</a></li>
-          <li><a href="index.html/#our-services">Services</a></li>
+      <!-- <div class="menuburguer">
+        <img
+          src="resources/images/logos/menu-de-hamburguesas.png"
+          alt="menuburguer"
+        />
+      </div> -->
+      <nav id="nav" class="menu-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#recent-projects">Projects</a></li>
+          <li><a href="#our-services">Services</a></li>
         </ul>
       </nav>
+      <button id="button-menu" class="button-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-      <button><a href="contact-us.html">Contact Us</a></button>
+      <button class="button-contact"><a href="contact-us.html">Contact Us</a></button>
     </div>
 
     <!-- Formulario de contacto -->
@@ -96,5 +107,7 @@
         <a href="#">Privacy Policy</a>
       </div>
     </footer>
+    <script src="./resources/js/menu-burguer.js"></script>
+    <script src="./resources/js/contact.js"></script>
   </body>
 </html>

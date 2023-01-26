@@ -14,18 +14,31 @@
         ><img src="resources/images/logos/circle.svg" alt="logo-circle"
       /></a>
 
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="index.html/#recent-projects">Projects</a></li>
-          <li><a href="index.html/#our-services">Services</a></li>
+      <!-- <div class="menuburguer">
+        <img
+          src="resources/images/logos/menu-de-hamburguesas.png"
+          alt="menuburguer"
+        />
+      </div> -->
+      <nav id="nav" class="menu-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#recent-projects">Projects</a></li>
+          <li><a href="#our-services">Services</a></li>
         </ul>
       </nav>
+      <button id="button-menu" class="button-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-      <button><a href="contact-us.html">Contact Us</a></button>
+      <button class="button-contact">
+        <a href="contact-us.html">Contact Us</a>
+      </button>
     </div>
 
-    <!-- section con el artículo de Simplify -->
+    <!-- section con el artículo de Simplify. Se tiene que traer el título y el texto de una API -->
     <section class="simplify-article">
       <div class="title-article">
         <h2>Simplify</h2>
@@ -41,7 +54,7 @@
         src="resources/images/projects-section/1.jpg"
         alt="square"
       />
-      <p class="body-text-article">
+      <p id="text-project-page" class="body-text-article">
         Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui
         esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit
         aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute
@@ -54,7 +67,7 @@
         Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate
         aute id deserunt nisi.
       </p>
-      <p class="body-text-article">
+      <!-- <p id="text-project-page" class="body-text-article">
         Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui
         esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit
         aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute
@@ -67,45 +80,45 @@
         irure ex duis ea quis id quis ad e dolore cillum minim tempor enim. Elit
         aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute
         id deserunt nis cillum minim tempor enim.
-      </p>
+      </p> -->
     </section>
 
     <!-- section con los tres Recent Projects -->
 
     <section id="recent-projects" class="projects">
-      <h2>Other Projects</h2>
+      <h2>Recent Projects</h2>
       <div>
         <article>
           <img
-            src="resources/images/projects-section/4.jpg"
+            src="resources/images/projects-section/1.jpg"
             alt="imge Simplify"
           />
-          <div class="projects-text">
-            <h4>Orbit</h4>
-            <p>UI Design</p>
-            <a href="#">Learn more</a>
+          <div id="text1" class="projects-text">
+            <h4>Simplify</h4>
+            <p>UI Design & App Development</p>
+            <a href="project.html">Learn more</a>
           </div>
         </article>
         <article>
           <img
-            src="resources/images/projects-section/5.jpg"
+            src="resources/images/projects-section/2.jpg"
             alt="image Dashcoin"
           />
-          <div class="projects-text">
-            <h4>Purify</h4>
-            <p>UI/UX Design</p>
-            <a href="#">Learn more</a>
+          <div id="text2" class="projects-text">
+            <h4>Dashcoin</h4>
+            <p>Web Development</p>
+            <a href="project.html">Learn more</a>
           </div>
         </article>
         <article>
           <img
-            src="resources/images/projects-section/6.jpg"
+            src="resources/images/projects-section/3.jpg"
             alt="image Vectorify"
           />
-          <div class="projects-text">
-            <h4>CryptoPie</h4>
-            <p>App Development</p>
-            <a href="#">Learn more</a>
+          <div id="text3" class="projects-text">
+            <h4>Vectorify</h4>
+            <p>User Experience Design</p>
+            <a href="project.html">Learn more</a>
           </div>
         </article>
       </div>
@@ -160,5 +173,8 @@
         <a href="#">Privacy Policy</a>
       </div>
     </footer>
+    <script src="./resources/js/menu-burguer.js"></script>
+    <script src="./resources/js/api-project.js"></script>
+    <script src="./resources/js/api-project-page.js"></script>
   </body>
 </html>

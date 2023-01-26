@@ -10,22 +10,30 @@
   <body>
     <!-- Barra de navegación -->
     <div class="menu-zone">
-      <a href=""
+      <a href="index.html"
         ><img src="resources/images/logos/circle.svg" alt="logo-circle"
       /></a>
 
-      <div class="menuburguer">
-        <img src="resources/images/logos/menu-de-hamburguesas.png" alt="menuburguer">
-      </div>
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
+      <!-- <div class="menuburguer">
+        <img
+          src="resources/images/logos/menu-de-hamburguesas.png"
+          alt="menuburguer"
+        />
+      </div> -->
+      <nav id="nav" class="menu-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
           <li><a href="#recent-projects">Projects</a></li>
           <li><a href="#our-services">Services</a></li>
         </ul>
       </nav>
+      <button id="button-menu" class="button-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-      <button><a href="contact-us.html">Contact Us</a></button>
+      <button class="button-contact"><a href="contact-us.html">Contact Us</a></button>
     </div>
 
     <!-- Header h1 -->
@@ -79,10 +87,10 @@
             src="resources/images/projects-section/1.jpg"
             alt="imge Simplify"
           />
-          <div class="projects-text">
+          <div id="text1" class="projects-text ">
             <h4>Simplify</h4>
             <p>UI Design & App Development</p>
-            <a href="#">Learn more</a>
+            <a href="project.html">Learn more</a>
           </div>
         </article>
         <article>
@@ -90,10 +98,10 @@
             src="resources/images/projects-section/2.jpg"
             alt="image Dashcoin"
           />
-          <div class="projects-text">
+          <div id="text2" class="projects-text">
             <h4>Dashcoin</h4>
             <p>Web Development</p>
-            <a href="#">Learn more</a>
+            <a href="project.html">Learn more</a>
           </div>
         </article>
         <article>
@@ -101,10 +109,10 @@
             src="resources/images/projects-section/3.jpg"
             alt="image Vectorify"
           />
-          <div class="projects-text">
+          <div id="text3" class="projects-text">
             <h4>Vectorify</h4>
             <p>User Experience Design</p>
-            <a href="#">Learn more</a>
+            <a href="project.html">Learn more</a>
           </div>
         </article>
       </div>
@@ -163,7 +171,7 @@
     <section id="our-services" class="services">
       <h2>Our Servicess</h2>
 
-      <div>
+      <div class="articles-services">
         <article>
           <div class="icons-services">
             <img
@@ -261,5 +269,8 @@
         <a href="#">Privacy Policy</a>
       </div>
     </footer>
+    <script src="./resources/js/menu-burguer.js"></script>
+    <script src="./resources/js/api-project.js"></script>
+    <!-- <script src="./resources/js/smooth-scroll.js"></script> -->
   </body>
 </html>
