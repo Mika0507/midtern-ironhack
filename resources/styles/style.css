@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto:wght@100;300;400;500&display=swap");
 
+
 :root {
   --primary: #072ac8;
   --blue1-1: #43D2FF;
@@ -693,11 +694,20 @@ footer div p{
   border: none;
 }
 .form-div{
+ display: none;
+}
+.form-div.active{
+  display: block;
   background-color: rgb(181, 232, 154);
   border: 1px solid rgb(123, 219, 44);
   color: var(--colorh1Text);
 }
-
+.form-div.notfinish{
+  display: block;
+  background-color: rgb(247, 135, 135);
+  border: 1px solid rgb(242, 24, 24);
+  color: var(--colorh1Text);
+}
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ About html ------------------------------ */
 /* ----------------------------------------------------------------------------- */
