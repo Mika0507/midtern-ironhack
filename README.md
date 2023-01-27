@@ -96,6 +96,7 @@ En esta sección se puede incluir información como:
 En resumen, la sección "construido con" es una excelente manera de brindar a los usuarios y contribuidores una compresión de las tecnologías y herramientas utilizadas para desarrollar el proyecto, esto ayuda a entender mejor el proyecto y a los desarrolladores a contribuir de manera efectiva. -->
 Los lenguajes de programación usados a la edición e interacción de las páginas web, son: HTML, CSS y JavaScript. Sin el uso de ningún framework.
 [https://jsonplaceholder.typicode.com/] 
+[https://getbootstrap.com/docs/4.0/components/alerts/] 
  
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
