@@ -692,7 +692,11 @@ footer div p{
   height: 80px;
   border: none;
 }
-
+.form-div{
+  background-color: rgb(181, 232, 154);
+  border: 1px solid rgb(123, 219, 44);
+  color: var(--colorh1Text);
+}
 
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ About html ------------------------------ */
