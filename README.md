@@ -79,6 +79,7 @@ En esta sección se puede incluir información como:
 En resumen, la sección "sobre el proyecto" es una excelente manera de brindar a los usuarios y contribuidores una visión general del proyecto y proporcionarles toda la información necesaria para comenzar a trabajar con él. -->
 Este proyecto se basa en la aplicación de los conocimientos adquiridos con respecto a los lenguajes de programación HTML, CSS y JavaScript. Creamos una copia de una página web e intentamos acercarnos lo más posible al diseño original.
 Las funcionalidades principales de este proyecto son la adaptación del diseño a diferentes tipos de pantalla y a la interacción con la navegación como usuario.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Construido Con
@@ -196,6 +197,7 @@ En resumen, la sección "agradecimientos" es una excelente manera de agradecer a
 
 - [Icon Libraries](insert-link-here)
 - [Google Font Libraries](insert-link-here) -->
+Agradecimientos a los profesores de Ironhack. Y a mis compañeros. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
